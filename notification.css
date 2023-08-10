@@ -1,0 +1,166 @@
+/*Need to define our styles on a webpage*/
+
+.fintestExplorerNotification {
+    height: auto;
+    width: 336px !important;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 0;
+    margin: 0 !important;
+}
+
+.fintestExplorerNotification.dimensionsNotification.js-notification.tooltipFintestExplorer {
+    position: fixed;
+    z-index: 9999999999;
+    bottom: 0;
+    right: 0;
+}
+
+.fintestExplorerNotification.success {
+    background: rgb(0, 188, 140);
+}
+
+.fintestExplorerNotification.warning {
+    background: rgb(232, 76, 61);
+}
+
+.fintestExplorerNotification.info {
+    background: rgb(84, 187, 210);
+}
+
+.fintestExplorerNotification .fintestExplorerNotificationBody {
+    display: flex;
+    flex-direction: row;
+    line-height: normal;
+}
+
+.fintestExplorerNotification .fintestExplorerNotificationImgBlock {
+    display: flex;
+    justify-content: center;
+    margin: 13px 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.fintestExplorerNotification .fintestExplorerNotificationCrossImg {
+    font: initial !important;
+}
+
+.fintestExplorerNotification .fintestExplorerNotificationCrossImg.copy {
+    padding: 0;
+}
+
+.fintestExplorerNotificationImg {
+    margin: auto !important;
+    font: initial !important;
+    padding: 0;
+}
+
+.fintestExplorerNotificationImg svg,
+.fintestExplorerNotification .fintestExplorerNotificationCrossImg svg {
+    vertical-align: top;
+    position: initial !important;
+}
+
+.fintestExplorerNotification .fintestExplorerNotificationText {
+    display: block;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 230px;
+    white-space: nowrap;
+}
+
+/*Max width for success toster with copy button */
+
+.fintestExplorerNotification.success:not(.tooltipFintestExplorer) .fintestExplorerNotificationText {
+    max-width: 170px;
+}
+
+.fintestExplorerNotification .fintestExplorerNotificationText.bold {
+    font-weight: bold;
+}
+
+.fintestExplorerNotification .fintestExplorerNotificationTextBlock {
+    margin: auto;
+    margin-left: 0;
+    letter-spacing: normal;
+}
+
+.fintestExplorerNotification .fintestExplorerNotificationCrossBlock {
+    padding: 15px;
+    font-size: initial;
+    display: flex;
+    align-items: center;
+}
+
+.fintestExplorerNotification .notificationHr {
+    width: 1px;
+    height: 30px;
+    margin: auto 0px;
+    background: white;
+    border: none;
+    transform: scaleX(0.5);
+}
+
+.fintestExplorerNotification.tooltipFintestExplorer {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltipFintestExplorer .tooltiptext {
+    transition: opacity 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    width: fit-content;
+    background-color: #555;
+    color: #fff;
+    max-width: 300px;
+    border-radius: 6px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.tooltipFintestExplorer .tooltiptext div {
+    text-align: center;
+    word-break: break-word;
+}
+
+.fintestExplorerNotification .tooltipBlockFintestExplorer {
+    position: absolute;
+    width: 336px;
+    display: flex;
+    justify-content: center;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -50%;
+    pointer-events: none;
+}
+
+.tooltipFintestExplorer .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.fintestExplorerNotificationTextBlock:hover~.tooltipBlockFintestExplorer .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.fintestExplorerNotificationCrossImg.cross:hover svg path {
+    fill: rgb(251, 148, 110) !important;
+}
+
+.fintestExplorerNotificationCrossImg.copy:hover svg path {
+    fill: rgb(251, 148, 110) !important;
+}

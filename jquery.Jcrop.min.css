@@ -1,0 +1,175 @@
+/*Need to define our styles on a webpage*/
+
+/* jquery.Jcrop.min.css v0.9.12 (build:20130126) */
+
+.jcrop-holder {
+    direction: ltr;
+    text-align: left;
+    z-index: 1000000;
+}
+
+.jcrop-vline,
+.jcrop-hline {
+    background: white;
+    font-size: 0;
+    position: absolute;
+}
+
+.jcrop-vline {
+    height: 100%;
+    width: 3px !important;
+}
+
+.jcrop-vline.right {
+    right: 0;
+}
+
+.jcrop-hline {
+    height: 3px !important;
+    width: 100%;
+}
+
+.jcrop-hline.bottom {
+    bottom: 0;
+}
+
+.jcrop-tracker {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.jcrop-handle {
+    background-color: white;
+    border: 1px white solid;
+    font-size: 1px;
+    height: 4px;
+    width: 4px;
+}
+
+.jcrop-handle.ord-n {
+    left: 50%;
+    margin-left: -6px;
+    margin-top: -6px;
+    top: 0;
+}
+
+.jcrop-handle.ord-s {
+    bottom: 0;
+    left: 50%;
+    margin-bottom: -6px;
+    margin-left: -6px;
+}
+
+.jcrop-handle.ord-e {
+    margin-right: -6px;
+    margin-top: -6px;
+    right: 0;
+    top: 50%;
+}
+
+.jcrop-handle.ord-w {
+    left: 0;
+    margin-left: -6px;
+    margin-top: -6px;
+    top: 50%;
+}
+
+.jcrop-handle.ord-nw {
+    left: 0;
+    margin-left: -6px;
+    margin-top: -6px;
+    top: 0;
+}
+
+.jcrop-handle.ord-ne {
+    margin-right: -6px;
+    margin-top: -6px;
+    right: 0;
+    top: 0;
+}
+
+.jcrop-handle.ord-se {
+    bottom: 0;
+    margin-bottom: -6px;
+    margin-right: -6px;
+    right: 0;
+}
+
+.jcrop-handle.ord-sw {
+    bottom: 0;
+    left: 0;
+    margin-bottom: -6px;
+    margin-left: -6px;
+}
+
+.jcrop-dragbar.ord-n,
+.jcrop-dragbar.ord-s {
+    height: 0px;
+    width: 100%;
+}
+
+.jcrop-dragbar.ord-e,
+.jcrop-dragbar.ord-w {
+    height: 100%;
+    width: 0px;
+}
+
+.jcrop-dragbar.ord-n {
+    margin-top: -1px;
+    border-top: 1px dashed #FFFFFF;
+}
+
+.jcrop-dragbar.ord-s {
+    bottom: 0;
+    margin-bottom: -1px;
+    border-bottom: 1px dashed #FFFFFF;
+}
+
+.jcrop-dragbar.ord-e {
+    margin-right: -1px;
+    right: 0;
+    border-right: 1px dashed #FFFFFF;
+}
+
+.jcrop-dragbar.ord-w {
+    margin-left: -1px;
+    border-left: 1px dashed #FFFFFF;
+}
+
+.jcrop-light .jcrop-vline,
+.jcrop-light .jcrop-hline {
+    background: transparent;
+    opacity: 1 !important;
+}
+
+.jcrop-light .jcrop-handle {
+    background-color: black;
+    border-color: white;
+    opacity: 1 !important;
+}
+
+.jcrop-dark .jcrop-vline,
+.jcrop-dark .jcrop-hline {
+    background: transparent;
+    filter: alpha(opacity=100) !important;
+    opacity: 1 !important;
+}
+
+.jcrop-dark .jcrop-handle {
+    background-color: transparent;
+    border-color: white;
+    border-radius: 3px;
+}
+
+.solid-line .jcrop-vline,
+.solid-line .jcrop-hline {
+    background: transparent;
+}
+
+.jcrop-holder img,
+img.jcrop-preview {
+    max-width: none;
+}

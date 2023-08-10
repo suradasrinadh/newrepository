@@ -1,0 +1,65 @@
+#fintest-loader {
+    display: block;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #DC6B2F;
+    animation: spin 1.7s linear infinite;
+    z-index: 11;
+}
+
+.popupBodyFintestExplorer #fintest-loader {
+    width: 120px;
+    height: 120px;
+}
+
+.projectFintestExplorer2 #fintest-loader {
+    width: 140px;
+    height: 140px;
+}
+
+#fintest-loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #DC6B2F;
+    animation: spin-reverse .6s linear infinite;
+}
+
+#fintest-loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #DC6B2F;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-reverse {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
